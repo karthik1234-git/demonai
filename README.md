@@ -15,10 +15,9 @@ Demon Copilot is built on a cross-platform, VM-to-Host architecture designed for
 
 ## 🖼️ Visuals
 
-Here is the "Neural Link" interface in action:
+The "Neural Link" interface is intended to provide a sleek, hacker-style terminal UI for interacting with Demon Copilot.
 
-![Demon Copilot UI](demon_copilot_ui.png)
-*(Note: Ensure `demon_copilot_ui.png` is uploaded to the root of your repository so it displays correctly here.)*
+*A repository screenshot is not currently included in this README.*
 
 ## 🚀 Installation & Setup
 
