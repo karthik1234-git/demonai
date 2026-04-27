@@ -42,10 +42,11 @@ Inside your Arch Linux VirtualBox instance:
    git clone https://github.com/karthik1234-git/demonai.git
    cd demonai
    ```
-2. Configure the API endpoint in your script to point to the host gateway:
+2. Configure the API endpoint in the code to point to the host gateway:
    ```python
-   # Example endpoint configuration
-   OLLAMA_URL = "http://10.0.2.2:11434/api/generate"
+   # The current implementation hard-codes the Ollama endpoint in demon_copilot.py.
+   # Update that URL to point to the VirtualBox host gateway if needed:
+   "http://10.0.2.2:11434/api/generate"
    ```
 3. Run the bot:
    ```bash
