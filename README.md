@@ -2,20 +2,20 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-**Demon Copilot** is an AI bot designed to handle tasks within Arch Linux. Operating through a sleek, hacker-style terminal UI known as the **"Neural Link"**, it serves as a powerful, localized assistant for your virtualized environment.
+**Demon Copilot** is an AI bot designed to handle tasks within Arch Linux. Operating through a sleek, hacker-style `customtkinter` GUI window known as the **"Neural Link"**, it serves as a powerful, localized assistant for your virtualized environment.
 
 ## 👁️ System Architecture
 
 Demon Copilot is built on a cross-platform, VM-to-Host architecture designed for secure, local inference:
 
-- **Frontend / Client:** Runs inside an **Arch Linux VM (64-bit)** hosted on Oracle VirtualBox. This is where the "Neural Link" terminal UI lives and executes tasks.
+- **Frontend / Client:** Runs inside an **Arch Linux VM (64-bit)** hosted on Oracle VirtualBox. This is where the "Neural Link" `customtkinter` GUI runs and executes tasks.
 - **Backend / LLM Host:** Communicates with an **Ollama server** running on the Windows Host machine.
 - **Networking:** The connection bridges the VM to the Host via the VirtualBox NAT gateway IP: `10.0.2.2`.
 - **Model:** Powered by local inference using a lightweight but capable **3B parameter model** (such as Llama 3.2).
 
 ## 🖼️ Visuals
 
-The "Neural Link" interface is intended to provide a sleek, hacker-style terminal UI for interacting with Demon Copilot.
+The "Neural Link" interface currently provides a sleek, hacker-style `customtkinter` GUI window for interacting with Demon Copilot.
 
 *A repository screenshot is not currently included in this README.*
 
