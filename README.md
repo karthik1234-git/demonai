@@ -49,7 +49,7 @@ Inside your Arch Linux VirtualBox instance:
    ```
 3. Run the bot:
    ```bash
-   python main.py
+   python demon_copilot.py
    ```
 
 ## 📜 License
