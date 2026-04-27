@@ -24,12 +24,15 @@ The "Neural Link" interface is intended to provide a sleek, hacker-style termina
 ### 1. Windows Host Configuration (Ollama)
 By default, Ollama only listens to `localhost`. You must expose it so the Arch VM can connect.
 
+> [!WARNING]
+> Setting `OLLAMA_HOST=0.0.0.0` binds Ollama on all network interfaces of the Windows host. Do **not** create a broad inbound firewall rule that exposes port `11434` to your entire LAN. Restrict access to the VirtualBox/VM network only, or otherwise limit exposure to trusted local addresses.
+
 1. Open your Windows Environment Variables.
 2. Add a new System Variable:
    - **Variable Name:** `OLLAMA_HOST`
    - **Variable Value:** `0.0.0.0`
 3. Restart the Ollama application or service.
-4. Ensure your firewall allows traffic on port `11434`.
+4. Update your Windows firewall to allow inbound traffic on port `11434` **only** from the VirtualBox/VM network used by your Arch guest (for example, the VirtualBox NAT path to `10.0.2.2`), rather than allowing access from all networks.
 
 ### 2. Arch Linux VM Setup
 Inside your Arch Linux VirtualBox instance:
